@@ -15,9 +15,9 @@ export class ListaDestinosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  guardar(nombre:string, url:string):boolean{
-    this.destinos.push(new DestinoViaje(nombre, url));
-    //console.log(this.destinos);
+  guardar(nombre:string, url:string, descripcion:string):boolean{
+    this.destinos.push(new DestinoViaje(nombre, url, descripcion));
+    console.log(this.destinos);
 
     return false; //
   }
